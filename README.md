@@ -1,13 +1,17 @@
 Download "ffmpeg" and add to PATH.
 
 ```bash
-# install ffmpeg 3.3.4
-npm install -g ffmpegd@3.3.4
+$ npm i -g ffmpeg.cmd
 ```
 
 ```bash
-# use ffmpeg
-ffmpeg --help
+# Use ffmpeg
+$ ffmpeg --help
 ```
 
-![](https://ga-beacon.deno.dev/G-RC63DPBH3P:SH3Eq-NoQ9mwgYeHWxu7cw/github.com/nodef/ffmpegd)
+<br>
+<br>
+
+
+[![ORG](https://img.shields.io/badge/org-nodef-green?logo=Org)](https://nodef.github.io)
+![](https://ga-beacon.deno.dev/G-RC63DPBH3P:SH3Eq-NoQ9mwgYeHWxu7cw/github.com/nodef/ffmpeg.sh)

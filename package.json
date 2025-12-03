@@ -1,40 +1,28 @@
 {
-  "name": "ffmpegd",
-  "version": "4.4.3",
-  "description": "Download \"ffmpeg\" and add to PATH.",
+  "name": "ffmpeg.sh",
+  "version": "0.0.2",
+  "description": "FFmpeg is the leading multimedia framework, able to decode, encode, transcode, mux, demux, stream, filter and play pretty much anything that humans and machines have created; Fabrice Bellard (2000).",
   "main": "index.js",
   "scripts": {
-    "deploy": "ebuild publish+github --publishMin=false --publishBranch=false",
-    "postinstall": "node ./postinstall.js",
     "test": "exit"
   },
   "bin": {
-    "ffmpeg": "ffmpeg.cmd",
-    "ffplay": "ffplay.cmd",
-    "ffprobe": "ffprobe.cmd"
+    "ffmpeg": "ffmpeg/bin/ffmpeg",
+    "ffplay": "ffmpeg/bin/ffplay",
+    "ffprobe": "ffmpeg/bin/ffprobe"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nodef/ffmpegd.git"
+    "url": "git+https://github.com/nodef/ffmpeg.sh.git"
   },
   "keywords": [
     "ffmpeg",
-    "download"
+    "linux"
   ],
   "author": "wolfram77@gmail.com",
-  "license": "MIT",
+  "license": "GPL-3.0-only",
   "bugs": {
-    "url": "https://github.com/nodef/ffmpegd/issues"
+    "url": "https://github.com/nodef/ffmpeg.sh/issues"
   },
-  "homepage": "https://github.com/nodef/ffmpegd#readme",
-  "dependencies": {
-    "async": "^3.2.5",
-    "download-progress": "0.0.1",
-    "progress": "^2.0.3",
-    "tar": "^7.0.0",
-    "unzipper": "^0.10.14"
-  },
-  "devDependencies": {
-    "extra-build": "^2.2.43"
-  }
+  "homepage": "https://github.com/nodef/ffmpeg.sh#readme"
 }

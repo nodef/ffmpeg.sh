@@ -1,3 +1,2 @@
-# Build
-.travis.yml
-.coveralls.yml
+.build/
+build.sh
