@@ -1,6 +1,6 @@
 {
   "name": "ffmpeg.sh",
-  "version": "0.0.2",
+  "version": "8.0.2",
   "description": "FFmpeg is the leading multimedia framework, able to decode, encode, transcode, mux, demux, stream, filter and play pretty much anything that humans and machines have created; Fabrice Bellard (2000).",
   "main": "index.js",
   "scripts": {

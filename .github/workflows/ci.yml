@@ -1,0 +1,55 @@
+name: CI
+on:
+  push:
+    branches:
+      - main
+      - master
+    tags:
+      - '!*'  # Do not execute on tags
+env:
+  NAME:  ${{vars.NAME}}
+  EMAIL: ${{vars.EMAIL}}
+  NPM_TOKEN:    ${{secrets.NPM_TOKEN}}
+  GITHUB_TOKEN: ${{secrets.GH_TOKEN}}
+  FORCE_COLOR: 1
+
+
+jobs:
+  publish-linux:
+    name: Publish linux package
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24.x
+      - uses: nodef/npm-config.action@v1.2.0
+        with:
+          credentials: auto
+          entries: access=public
+        env:
+          GITHUB_TOKEN: ${{env.GITHUB_TOKEN}}
+          NPM_TOKEN: ${{env.NPM_TOKEN}}
+      - run: bash build.sh linux
+        env:
+          NODE_AUTH_TOKEN: ${{env.NPM_TOKEN}}
+
+
+  publish-windows:
+    name: Publish windows package
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24.x
+      - uses: nodef/npm-config.action@v1.2.0
+        with:
+          credentials: auto
+          entries: access=public
+        env:
+          GITHUB_TOKEN: ${{env.GITHUB_TOKEN}}
+          NPM_TOKEN: ${{env.NPM_TOKEN}}
+      - run: bash build.sh windows
+        env:
+          NODE_AUTH_TOKEN: ${{env.NPM_TOKEN}}

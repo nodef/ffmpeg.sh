@@ -39,7 +39,8 @@ function main() {
   p.bin.ffprobe = 'ffmpeg/bin/ffprobe.exe';
   p.keywords = [...p.keywords.filter(k => k !== 'linux'), 'windows'];
   writeJsonFileSync('package.json', p);
-  cp.execSync('npm publish', { stdio: 'inherit' });
+  try { cp.execSync('npm publish', { stdio: 'inherit' }); }
+  catch (e) { console.error(e); }
   writeTextFileSync('package.json', packageSh);
 }
 main();

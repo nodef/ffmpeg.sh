@@ -1,8 +1,18 @@
-Download "ffmpeg" and add to PATH.
+[FFmpeg](https://www.ffmpeg.org) is the leading multimedia framework, able to decode, encode, transcode, mux, demux, stream, filter and play pretty much anything that humans and machines have created; Fabrice Bellard (2000).
+
+<br>
+
+
+## Installation
 
 ```bash
+# On Linux / MacOS
+$ npm i -g ffmpeg.sh
+# On Windows
 $ npm i -g ffmpeg.cmd
 ```
+
+Once installed, the `ffmpeg`, `ffprobe` and `ffplay` commands will be available globally.
 
 ```bash
 # Use ffmpeg

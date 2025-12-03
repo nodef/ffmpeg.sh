@@ -45,8 +45,8 @@ cd ..
 rm -rf ffmpeg/
 if [[ "$1" == "windows" ]]; then
   echo "Publishing for Windows ..."
-  node build.js "windows"
   setup "windows" "$URL_WIN"
+  node build.js "windows"
 else
   echo "Publishing for Linux ..."
   setup "linux" "$URL_LNX"

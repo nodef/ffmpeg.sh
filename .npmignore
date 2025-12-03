@@ -1,2 +1,4 @@
+.github/
 .build/
 build.sh
+build.js
