@@ -1,4 +1,8 @@
-[FFmpeg](https://www.ffmpeg.org) is the leading multimedia framework, able to decode, encode, transcode, mux, demux, stream, filter and play pretty much anything that humans and machines have created; Fabrice Bellard (2000).
+This package allows you to install [FFmpeg] on your system using **npm**. It is a wrapper around the official FFmpeg (*shared lib*) builds by [BtbN](https://github.com/BtbN/FFmpeg-Builds/releases). The binaries include `ffmpeg`, `ffprobe` and `ffplay`.
+
+[FFmpeg](https://www.ffmpeg.org) is the leading multimedia framework, able to decode, encode, transcode, mux, demux, stream, filter and play pretty much anything that humans and machines have created, and has been developed by Fabrice Bellard (2000).
+
+[FFmpeg]: https://www.ffmpeg.org
 
 <br>
 
@@ -6,10 +10,8 @@
 ## Installation
 
 ```bash
-# On Linux / MacOS
-$ npm i -g ffmpeg.sh
-# On Windows
-$ npm i -g ffmpeg.cmd
+$ npm i -g ffmpeg.sh   # Install on Linux / MacOS
+$ npm i -g ffmpeg.cmd  # Install on Windows
 ```
 
 Once installed, the `ffmpeg`, `ffprobe` and `ffplay` commands will be available globally.

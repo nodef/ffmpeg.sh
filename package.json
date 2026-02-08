@@ -1,24 +1,35 @@
 {
   "name": "ffmpeg.sh",
-  "version": "8.0.2",
+  "version": "8.0.3",
   "description": "FFmpeg is the leading multimedia framework, able to decode, encode, transcode, mux, demux, stream, filter and play pretty much anything that humans and machines have created; Fabrice Bellard (2000).",
   "main": "index.js",
-  "scripts": {
-    "test": "exit"
-  },
   "bin": {
     "ffmpeg": "ffmpeg/bin/ffmpeg",
     "ffplay": "ffmpeg/bin/ffplay",
     "ffprobe": "ffmpeg/bin/ffprobe"
   },
+  "keywords": [
+    "ffmpeg",
+    "ffplay",
+    "ffprobe",
+    "multimedia",
+    "video",
+    "audio",
+    "transcoding",
+    "streaming",
+    "filtering",
+    "cross-platform",
+    "linux",
+    "windows",
+    "macos"
+  ],
+  "scripts": {
+    "test": "exit"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nodef/ffmpeg.sh.git"
   },
-  "keywords": [
-    "ffmpeg",
-    "linux"
-  ],
   "author": "wolfram77@gmail.com",
   "license": "GPL-3.0-only",
   "bugs": {
